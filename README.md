@@ -50,7 +50,7 @@ This implementation highlights container orchestration, deployment automation, a
 
 ### Team Members
 
-| # | Name               | Enrollment No   |
+| Sno. | Name               | Enrollment No   |
 |---|--------------------|-----------------|
 | 1 | Naman Mehta        | EN22CS301629    |
 | 2 | Naman Raghuvanshi  | EN22CS301632    |
@@ -63,4 +63,5 @@ This implementation highlights container orchestration, deployment automation, a
 This project demonstrates the practical implementation of container orchestration using Kubernetes for deploying and managing a Rust-based application. By implementing rolling updates and service management, the system ensures continuous availability and reliable deployment.
 
 The project highlights how Kubernetes can be used to manage modern applications efficiently while maintaining scalability, reliability, and minimal service disruption during updates.
+
 
