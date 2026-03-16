@@ -1,67 +1,73 @@
-## Multi-Agent Insurance System Deployment on Kubernetes
+## Multi-Agent Insurance System
 
-### Project Description
-
-This project focuses on orchestrating the deployment of an Insurance Rust-based application onto a Kubernetes cluster using Minikube. The system uses containerized workloads managed through Kubernetes `Deployment` and `Service` manifests to ensure efficient application lifecycle management.
-
-A key feature of the implementation is **zero-downtime rolling updates**, which allows seamless upgrades of application versions without interrupting service availability for end users. This ensures reliability, scalability, and continuous operation of the system during updates.
-
-### Project Overview
-
-The project demonstrates how modern container orchestration platforms like Kubernetes can be used to deploy and manage applications efficiently. The Insurance application is containerized using Docker and deployed to a local Kubernetes cluster (Minikube).
-
-Kubernetes deployment strategies ensure that updates to the application occur gradually without affecting running services. The system also includes service configurations to expose the application and manage network communication between components.
-
-This implementation highlights container orchestration, deployment automation, and high availability practices commonly used in real-world production environments.
-
-### Objectives
-
-- **Deploy** a containerized Insurance Rust application on a Kubernetes cluster.
-- **Implement** Kubernetes `Deployment` and `Service` manifests for application management.
-- **Ensure** high availability and scalability of the application.
-- **Implement** rolling update strategy to achieve zero-downtime updates.
-- **Demonstrate** container orchestration using Minikube for local development and testing.
+A small demo web application that simulates multiple AI agents collaborating to recommend insurance policies.
 
 ### Tech Stack
 
-- **Programming Language**
-  - Rust
-- **Containerization**
-  - Docker
-- **Container Orchestration**
-  - Kubernetes
-  - Minikube
-- **Deployment & Infrastructure**
-  - Kubernetes Deployment YAML
-  - Kubernetes Service YAML
-- **Version Control**
-  - Git
-  - GitHub
+- **Backend**: Python Flask
+- **Frontend**: HTML, CSS, vanilla JavaScript
+- **Data store**: `policies.json`
 
-### Key Features
+### Features
 
-- **Containerized Rust Insurance Application**
-- **Kubernetes Deployment and Service Configuration**
-- **Zero-downtime rolling updates**
-- **Scalable container orchestration**
-- **Automated application lifecycle management**
-- **Local Kubernetes environment using Minikube**
-- **Reliable and consistent deployment strategy**
+- **Landing page** explaining the multi-agent concept.
+- **User input form** for age, income, family members, insurance type, coverage amount, and risk preference.
+- **Agents (simulated)**:
+  - **Input Agent**: validates input.
+  - **Recommendation Agent**: scores and picks the top 3 matching policies.
+  - **Comparison Agent**: renders a comparison table.
+  - **Query Agent**: answers questions with rule-based responses.
+- **Chat assistant** with predefined, rule-based answers.
 
-### Team Members
+### Project Structure
 
-| Sno. | Name               | Enrollment No   |
-|---|--------------------|-----------------|
-| 1 | Naman Mehta        | EN22CS301629    |
-| 2 | Naman Raghuvanshi  | EN22CS301632    |
-| 3 | Nishkarsh Sharma   | EN22CS301659    |
-| 4 | Mustafa Shaikh     | EN22CS301624    |
-| 5 | Nandini Sharma     | EN22CS301635    |
+```text
+project/
+  app.py
+  policies.json
+  requirements.txt
+  templates/
+      index.html
+      form.html
+      result.html
+  static/
+      style.css
+      script.js
+```
 
-### Conclusion
+### How to Run Locally
 
-This project demonstrates the practical implementation of container orchestration using Kubernetes for deploying and managing a Rust-based application. By implementing rolling updates and service management, the system ensures continuous availability and reliable deployment.
+1. **Open a terminal in the project folder**  
+   `c:\Users\lenovo\OneDrive\文档\Dewvops WEB`
 
-The project highlights how Kubernetes can be used to manage modern applications efficiently while maintaining scalability, reliability, and minimal service disruption during updates.
+2. **Create and activate a virtual environment (recommended)**
 
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate
+   ```
+
+3. **Install dependencies**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Run the Flask app**
+
+   ```bash
+   python app.py
+   ```
+
+5. **Open the app in your browser**
+
+   Go to `http://127.0.0.1:5000` and:
+
+   - Use the **"Find Best Insurance Policy"** button on the landing page.
+   - Fill in the form and submit to see:
+     - Top 3 recommended policies as cards.
+     - A comparison table with premium, coverage, and key benefits.
+   - Use the **chat** box to ask questions such as:
+     - "Does this policy cover hospitalization?"
+     - "Is accident coverage included?"
 

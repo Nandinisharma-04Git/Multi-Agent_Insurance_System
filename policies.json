@@ -1,0 +1,120 @@
+[
+  {
+    "id": 1,
+    "name": "Health Secure Basic",
+    "type": "Health",
+    "premium": 5000,
+    "coverage": 300000,
+    "benefits": [
+      "In-patient hospitalization",
+      "Day care procedures",
+      "Pre and post hospitalization (30/60 days)"
+    ],
+    "benefits_text": "Covers in-patient hospitalization, day care procedures, and pre/post hospitalization expenses."
+  },
+  {
+    "id": 2,
+    "name": "Health Secure Family",
+    "type": "Health",
+    "premium": 9000,
+    "coverage": 500000,
+    "benefits": [
+      "Family floater for up to 4 members",
+      "Cashless treatment at network hospitals",
+      "No-claim bonus"
+    ],
+    "benefits_text": "Family floater plan with cashless hospitalization at network hospitals and no-claim bonus."
+  },
+  {
+    "id": 3,
+    "name": "Health Premium Plus",
+    "type": "Health",
+    "premium": 15000,
+    "coverage": 1000000,
+    "benefits": [
+      "Worldwide hospitalization",
+      "Maternity and newborn cover",
+      "Critical illness rider"
+    ],
+    "benefits_text": "Premium health plan covering worldwide hospitalization, maternity, and critical illnesses."
+  },
+  {
+    "id": 4,
+    "name": "Life Protect Term",
+    "type": "Life",
+    "premium": 7000,
+    "coverage": 5000000,
+    "benefits": [
+      "Pure term insurance",
+      "High sum assured",
+      "Tax benefits"
+    ],
+    "benefits_text": "Pure term life insurance with high coverage and tax benefits."
+  },
+  {
+    "id": 5,
+    "name": "Life Income Shield",
+    "type": "Life",
+    "premium": 12000,
+    "coverage": 7500000,
+    "benefits": [
+      "Term insurance with income benefit",
+      "Accidental death benefit rider",
+      "Premium waiver on disability"
+    ],
+    "benefits_text": "Life insurance with regular income benefit, accidental death cover, and premium waiver."
+  },
+  {
+    "id": 6,
+    "name": "Life Wealth Builder",
+    "type": "Life",
+    "premium": 20000,
+    "coverage": 10000000,
+    "benefits": [
+      "Life cover with investment component",
+      "Loyalty additions",
+      "Partial withdrawal allowed"
+    ],
+    "benefits_text": "Life insurance cum investment plan with long-term wealth creation."
+  },
+  {
+    "id": 7,
+    "name": "Auto Protect Basic",
+    "type": "Vehicle",
+    "premium": 4000,
+    "coverage": 200000,
+    "benefits": [
+      "Third-party liability",
+      "Own damage cover",
+      "Personal accident cover for owner-driver"
+    ],
+    "benefits_text": "Basic vehicle insurance with accident coverage and third-party liability."
+  },
+  {
+    "id": 8,
+    "name": "Auto Protect Comprehensive",
+    "type": "Vehicle",
+    "premium": 6500,
+    "coverage": 400000,
+    "benefits": [
+      "Comprehensive damage cover",
+      "Zero depreciation add-on",
+      "Roadside assistance"
+    ],
+    "benefits_text": "Comprehensive motor policy with accident coverage, zero depreciation, and roadside assistance."
+  },
+  {
+    "id": 9,
+    "name": "Auto Protect Premium",
+    "type": "Vehicle",
+    "premium": 9000,
+    "coverage": 600000,
+    "benefits": [
+      "Engine and gearbox protection",
+      "Consumables cover",
+      "Return to invoice cover"
+    ],
+    "benefits_text": "Premium motor insurance including extensive accident and damage protection."
+  }
+]
+
