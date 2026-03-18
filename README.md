@@ -2,17 +2,26 @@
 
 ### Project Description
 
-This project focuses on orchestrating the deployment of an Insurance Rust-based application onto a Kubernetes cluster using Minikube. The system uses containerized workloads managed through Kubernetes `Deployment` and `Service` manifests to ensure efficient application lifecycle management.
+his project implements a small **web-based Multi-Agent Insurance System** that helps users find suitable insurance policies. Multiple agents are simulated in the backend using Python Flask logic (no real AI models):
 
-A key feature of the implementation is **zero-downtime rolling updates**, which allows seamless upgrades of application versions without interrupting service availability for end users. This ensures reliability, scalability, and continuous operation of the system during updates.
+- An **Input Agent** validates user data such as age, income, and risk preference.
+- A **Recommendation Agent** scores and selects the best matching policies from a predefined JSON dataset.
+- A **Comparison Agent** presents the top policies side-by-side in a clear comparison table.
+- A **Query Agent** powers a simple chat assistant using rule-based responses to common insurance questions.
+
+  The application is containerized using **Docker** to create an image and run it inside a container, making it easy to deploy and run consistently across different environments.
+
 
 ### Project Overview
 
-The project demonstrates how modern container orchestration platforms like Kubernetes can be used to deploy and manage applications efficiently. The Insurance application is containerized using Docker and deployed to a local Kubernetes cluster (Minikube).
+Users interact with a modern, responsive web UI to:
 
-Kubernetes deployment strategies ensure that updates to the application occur gradually without affecting running services. The system also includes service configurations to expose the application and manage network communication between components.
+- Enter personal and financial details.
+- Choose the desired insurance type and coverage.
+- Receive top 3 recommended policies along with a comparison table.
+- Chat with a simple assistant about coverage, hospitalization, accident benefits, and claims.
 
-This implementation highlights container orchestration, deployment automation, and high availability practices commonly used in real-world production environments.
+On the backend, Flask exposes REST APIs (`/recommend`, `/compare`, `/chat`) that implement the simulated agent logic on top of a JSON-based policy dataset. Docker is used only for **containerizing the Flask application**—building an image and running a container—without any Kubernetes or advanced orchestration.
 
 ### Objectives
 
@@ -74,7 +83,8 @@ project/
 
 ### Conclusion
 
-This project demonstrates the practical implementation of container orchestration using Kubernetes for deploying and managing a Rust-based application. By implementing rolling updates and service management, the system ensures continuous availability and reliable deployment.
+This project demonstrates how a multi-agent insurance recommendation concept can be built using a simple Flask backend, a JSON dataset, and a clean HTML/CSS/JavaScript frontend. The agents are simulated with rule-based and heuristic logic, providing a clear educational example without requiring real AI models.
 
-The project highlights how Kubernetes can be used to manage modern applications efficiently while maintaining scalability, reliability, and minimal service disruption during updates.
+Docker is used to package the entire application into an image and run it inside a container, ensuring consistent deployment on any machine with Docker Desktop installed. This showcases practical containerization of a small web app without adding the complexity of Kubernetes or other orchestration platforms.
+
 
