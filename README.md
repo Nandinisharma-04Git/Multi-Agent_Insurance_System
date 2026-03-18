@@ -2,7 +2,7 @@
 
 ### Project Description
 
-his project implements a small **web-based Multi-Agent Insurance System** that helps users find suitable insurance policies. Multiple agents are simulated in the backend using Python Flask logic (no real AI models):
+his project implements a small **web-based Multi-Agent Insurance System** that helps users find suitable insurance policies. Multiple agents are simulated in the backend using Python Flask logic:
 
 - An **Input Agent** validates user data such as age, income, and risk preference.
 - A **Recommendation Agent** scores and selects the best matching policies from a predefined JSON dataset.
