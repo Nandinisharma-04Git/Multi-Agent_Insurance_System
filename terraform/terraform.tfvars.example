@@ -1,0 +1,15 @@
+# Copy to terraform.tfvars and edit. Do not commit secrets.
+
+aws_region = "us-east-1"
+
+# Must be a public Git HTTPS URL (same repo as this project with Dockerfile at root).
+app_repository_url = "https://github.com/YOUR_ORG/Multi-Agent_Insurance_System.git"
+
+# Use "main" or "master" to match your default branch.
+app_repository_branch = "main"
+
+# Optional: existing EC2 Key Pair name in this region (for SSH debugging).
+# key_name = "my-laptop-key"
+
+# Optional: lock SSH to your IP, e.g. "203.0.113.50/32"
+# ssh_cidr = "0.0.0.0/0"
