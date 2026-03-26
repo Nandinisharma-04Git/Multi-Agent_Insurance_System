@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: insurance-app
+  labels:
+    app: insurance-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: insurance-app
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  template:
+    metadata:
+      labels:
+        app: insurance-app
+    spec:
+      containers:
+      - name: insurance-app
+        image: insurance-app:latest
+        imagePullPolicy: Never   # Use local image (Minikube)
+        ports:
+        - containerPort: 5000
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "100m"
+          limits:
+            memory: "256Mi"
+            cpu: "500m"
